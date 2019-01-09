@@ -44,6 +44,14 @@ Happy Coding! :heart: :sparkles:
 Watching the following scripts and compile they, if there were changes.
 
 ```
+app/sass/*.scss
+app/css/*.css
+app/js/**/*
+app/*.html
+app/*.js
+```
+
+```
 $ npm run watch
 ```
 
