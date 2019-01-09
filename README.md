@@ -1,6 +1,6 @@
 # Electron Boilerplate
 
-Electron Boilerplate with React, Babel, Browserify and Gulp.
+Electron boilerplate with React, Babel, Browserify and Gulp.
 
 ```
 // Clone Repository
@@ -35,4 +35,30 @@ Happy Coding! :heart: :sparkles:
 - `/build` Electron index.html & main.js copied from `/app`
 - `/build/assets` Files copied from `/app/assets`
 - `/build/css` Here you find the `style.min.css` generated from all Css files in `/app/css`
-- `/build/js` Here you find the `bundle.min.js` with contains the Js code of your React Application
+- `/build/js` Here you find the `bundle.min.js` with contains the Js code of your React application
+
+### Scripts
+
+##### Watch Scripts
+
+Watching the following scripts and compile they, if there were changes.
+
+```
+$ npm run watch
+```
+
+##### Build App
+
+Compile application and generate `/build` directory.
+
+```
+$ npm run build
+```
+
+##### Release App
+
+Not implemented yet, coming next...
+
+```
+$ npm run release
+```
