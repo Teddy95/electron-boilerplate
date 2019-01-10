@@ -1,9 +1,12 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const electron = require('electron')
+const isDev = require('electron-is-dev')
 
-// Reload all web contents in all windows after filechanges
-require('electron-reload')(__dirname)
+// Reload all web contents in all windows after filechanges in dev mode
+if (isDev) {
+	require('electron-reload')(__dirname)
+}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
