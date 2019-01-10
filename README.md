@@ -19,7 +19,7 @@ $ npm install
 $ npm run build
 $ npm start
 
-# ...or run App in Dev mode
+# ...or run App in dev mode
 $ npm run dev
 ```
 
