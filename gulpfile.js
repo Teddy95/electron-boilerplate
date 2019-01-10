@@ -116,6 +116,11 @@ gulp.task('package-linux', shell.task('npm run package-linux'))
 gulp.task('release', gulp.series('build', gulp.parallel('package-mac', 'package-windows', 'package-linux')))
 
 /**
+ * Serve App for development
+ */
+gulp.task('serve', gulp.series('build', 'watch', 'start-electron'))
+
+/**
  * Add watch task for Sass/Scss, Jsx and Js Files
  */
 gulp.task('watch', done => {
@@ -126,5 +131,3 @@ gulp.task('watch', done => {
 	gulp.watch('app/*.js', gulp.series('copy-electron-js'))
 	done()
 })
-
-gulp.task('serve', gulp.series('build', 'watch', 'start-electron'))
