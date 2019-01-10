@@ -2,6 +2,10 @@
 
 Electron boilerplate with React, Babel, Browserify and Gulp.
 
+<div style="text-align: center;">
+	<img src="app/assets/repo-header.jpg" alt="" />
+</div>
+
 ```
 // Clone Repository
 $ git clone https://github.com/Teddy95/reactron.git my-project
