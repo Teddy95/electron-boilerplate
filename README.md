@@ -114,6 +114,6 @@ $ npm run package-linux
 
 ...or release it all at once:
 
-```bash
+```shell
 $ npm run release
 ```
