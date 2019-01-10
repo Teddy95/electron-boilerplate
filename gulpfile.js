@@ -106,6 +106,7 @@ gulp.task('build', gulp.series('compile', 'copy'))
  * Start Electron
  */
 gulp.task('start-electron', shell.task('electron .'))
+gulp.task('start-electron-dev', shell.task('ELECTRON_ENV=development electron .'))
 
 /**
  * Package App to /release
@@ -130,4 +131,4 @@ gulp.task('watch', done => {
 /**
  * Serve App for development
  */
-gulp.task('serve', gulp.series('build', 'watch', 'start-electron'))
+gulp.task('serve', gulp.series('build', 'watch', 'start-electron-dev'))
