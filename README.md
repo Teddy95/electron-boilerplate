@@ -6,20 +6,20 @@
 
 Electron boilerplate with React, Babel, Browserify and Gulp.
 
-```
-// Clone Repository
+```shell
+# Clone Repository
 $ git clone https://github.com/Teddy95/reactron.git my-project
 
-// Go into root directory
+# Go into root directory
 $ cd my-project
 
-// Install dependencies
+# Install dependencies
 $ npm install
 
-// Compile App
+# Compile App
 $ npm run build
 
-// Run App
+# Run App
 $ npm start
 ```
 
@@ -55,7 +55,7 @@ app/*.html
 app/*.js
 ```
 
-```
+```shell
 $ npm run watch
 ```
 
@@ -63,14 +63,57 @@ $ npm run watch
 
 Compile application and generate `/build` directory.
 
-```
+```shell
 $ npm run build
 ```
 
 ##### Release App
 
-Not implemented yet, coming next...
+Packaged Applications get storaged in `/release` directory.
 
+**Configurations:**
+
+Set product name & icons in `package.json`.
+
+```json
+{
+	"name": "reactron",
+    "productName": "Reactron - Electron Boilerplate",
+	"build": {
+		"icon": {
+			"mac": "build/assets/icons/icon.icns",
+			"windows": "build/assets/icons/icon.ico",
+			"linux": "build/assets/icons/icon.png"
+		}
+	}
+}
 ```
+
+**Packaging:**
+
+_Packaging for Mac OS X_:
+
+```shell
+$ npm run build
+$ npm run package-mac
+```
+
+_Packaging for Windows_:
+
+```shell
+$ npm run build
+$ npm run package-windows
+```
+
+_Packaging for Linux_:
+
+```shell
+$ npm run build
+$ npm run package-linux
+```
+
+...or release it all at once:
+
+```shell
 $ npm run release
 ```
