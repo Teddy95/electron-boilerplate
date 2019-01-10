@@ -1,8 +1,6 @@
 <div style="text-align: center;">
 	<img src="app/assets/repo-header.jpg" alt="" />
-	<p>
-		with React, Babel, Browserify and Gulp.
-	</p>
+	<span>with React, Babel, Browserify and Gulp.</span>
 </div>
 
 ```shell
