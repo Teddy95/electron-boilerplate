@@ -1,5 +1,6 @@
-# Ignore /build directory
+# Ignore /build & /release directory
 /build/
+/release/
 
 # Ignore generated files in /app directory
 /app/css/index.css
