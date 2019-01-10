@@ -1,10 +1,10 @@
-# Electron Boilerplate
+# reactron
 
 Electron boilerplate with React, Babel, Browserify and Gulp.
 
 ```
 // Clone Repository
-$ git clone https://github.com/Teddy95/electron-boilerplate.git my-project
+$ git clone https://github.com/Teddy95/reactron.git my-project
 
 // Go into root directory
 $ cd my-project
