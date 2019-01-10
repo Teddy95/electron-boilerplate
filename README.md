@@ -45,6 +45,20 @@ Happy Coding! :heart: :sparkles:
 
 ## Scripts
 
+### Start App
+
+```shell
+$ npm start
+```
+
+### Start App in dev mode
+
+...
+
+```shell
+$ npm run dev
+```
+
 ### Watch Scripts
 
 Watching the following scripts and compile they, if there were changes.
