@@ -103,6 +103,11 @@ gulp.task('copy', gulp.parallel('copy-css', 'copy-electron-js', 'copy-html', 'co
 gulp.task('build', gulp.series('compile', 'copy'))
 
 /**
+ * Start Electron
+ */
+gulp.task('start-electron', shell.task('electron .'))
+
+/**
  * Package App to /release
  */
 gulp.task('package-mac', shell.task('npm run package-mac'))
@@ -121,3 +126,5 @@ gulp.task('watch', done => {
 	gulp.watch('app/*.js', gulp.series('copy-electron-js'))
 	done()
 })
+
+gulp.task('serve', gulp.series('build', 'watch', 'start-electron'))
