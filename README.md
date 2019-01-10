@@ -1,10 +1,10 @@
 # reactron
 
-Electron boilerplate with React, Babel, Browserify and Gulp.
-
 <div style="text-align: center;">
 	<img src="app/assets/repo-header.jpg" alt="" />
 </div>
+
+Electron boilerplate with React, Babel, Browserify and Gulp.
 
 ```
 // Clone Repository
