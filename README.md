@@ -1,10 +1,9 @@
-# reactron
-
 <div style="text-align: center;">
 	<img src="app/assets/repo-header.jpg" alt="" />
+	<p>
+		with React, Babel, Browserify and Gulp.
+	</p>
 </div>
-
-Electron boilerplate with React, Babel, Browserify and Gulp.
 
 ```shell
 # Clone Repository
@@ -25,9 +24,9 @@ $ npm start
 
 Happy Coding! :heart: :sparkles:
 
-### File structure
+## File structure
 
-##### Development in `/app`
+### Development in `/app`
 
 - `/app` Electron index.html & main.js
 - `/app/assets` Logos, images, icons, ...
@@ -35,15 +34,20 @@ Happy Coding! :heart: :sparkles:
 - `/app/js` Your React Js files
 - `/app/sass` Your Sass/Scss files
 
-##### Production in `/build`
+### Production in `/build`
+
 - `/build` Electron index.html & main.js copied from `/app`
 - `/build/assets` Files copied from `/app/assets`
 - `/build/css` Here you find the `style.min.css` generated from all Css files in `/app/css`
 - `/build/js` Here you find the `bundle.min.js` with contains the Js code of your React application
 
-### Scripts
+### Packaging in `/release`
 
-##### Watch Scripts
+- `/release` Compiled applications for Mac OS X, Windows and Linux
+
+## Scripts
+
+### Watch Scripts
 
 Watching the following scripts and compile they, if there were changes.
 
@@ -59,7 +63,7 @@ app/*.js
 $ npm run watch
 ```
 
-##### Build App
+### Build App
 
 Compile application and generate `/build` directory.
 
@@ -67,11 +71,9 @@ Compile application and generate `/build` directory.
 $ npm run build
 ```
 
-##### Release App
+### Release App
 
-Packaged Applications get storaged in `/release` directory.
-
-**Configurations:**
+##### Configurations
 
 Set product name & icons in `package.json`.
 
@@ -89,7 +91,7 @@ Set product name & icons in `package.json`.
 }
 ```
 
-**Packaging:**
+##### Packaging
 
 _Packaging for Mac OS X_:
 
