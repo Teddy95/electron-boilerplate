@@ -1,7 +1,7 @@
-<div style="text-align: center;">
+<p align="center">
 	<img src="app/assets/repo-header.jpg" alt="" />
 	<span>with React, Babel, Browserify and Gulp.</span>
-</div>
+</p>
 
 ```shell
 # Clone Repository
