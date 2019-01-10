@@ -3,6 +3,8 @@
 	<span>with React, Babel, Browserify and Gulp.</span>
 </p>
 
+![React App Electron Window](app/assets/app-window.png)
+
 ```shell
 # Clone Repository
 $ git clone https://github.com/Teddy95/reactron.git my-project
