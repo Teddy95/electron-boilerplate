@@ -78,7 +78,7 @@ Set product name & icons in `package.json`.
 ```json
 {
 	"name": "reactron",
-    "productName": "Reactron - Electron Boilerplate",
+	"productName": "Reactron - Electron Boilerplate",
 	"build": {
 		"icon": {
 			"mac": "build/assets/icons/icon.icns",
@@ -114,6 +114,6 @@ $ npm run package-linux
 
 ...or release it all at once:
 
-```shell
+```bash
 $ npm run release
 ```
