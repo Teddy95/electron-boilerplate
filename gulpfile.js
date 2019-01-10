@@ -8,6 +8,7 @@ var gulp = require('gulp')
 var concat = require('gulp-concat')
 var cssMinify = require('gulp-css')
 var sass = require('gulp-sass')
+const shell = require('gulp-shell')
 var uglify = require('gulp-uglify')
 sass.compiler = require('node-sass')
 var buffer = require('vinyl-buffer')
@@ -100,6 +101,14 @@ gulp.task('copy', gulp.parallel('copy-css', 'copy-electron-js', 'copy-html', 'co
  * Compile App to /build
  */
 gulp.task('build', gulp.series('compile', 'copy'))
+
+/**
+ * Package App to /release
+ */
+gulp.task('package-mac', shell.task('npm run package-mac'))
+gulp.task('package-windows', shell.task('npm run package-windows'))
+gulp.task('package-linux', shell.task('npm run package-linux'))
+gulp.task('release', gulp.series('build', gulp.parallel('package-mac', 'package-windows', 'package-linux')))
 
 /**
  * Add watch task for Sass/Scss, Jsx and Js Files
