@@ -38,9 +38,9 @@
     },
     "build": {
         "icon": {
-            "mac": "app/assets/icons/icon.icns",
-            "windows": "app/assets/icons/icon.ico",
-            "linux": "app/assets/icons/icon.png"
+            "mac": "build/assets/icons/icon.icns",
+            "windows": "build/assets/icons/icon.ico",
+            "linux": "build/assets/icons/icon.png"
         }
     }
 }
