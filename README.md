@@ -13,12 +13,18 @@ $ cd my-project
 # Install dependencies
 $ npm install
 
-# Compile App
+# Compile & run App...
 $ npm run build
-
-# Run App
 $ npm start
+
+# ...or run App in Dev mode
+$ npm run dev
 ```
+
+- Live reloading of web contents in all browser windows after filechanges :fire:
+- Watch task for live compiling of Sass/Scss and Jsx files after changes :dizzy:
+- Compiling React Jsx with Babel and Browserify :crystal_ball:
+- Included Electron Packager for packaging application for Mac OS X, Windows and Linux :gift:
 
 Happy Coding! :heart: :sparkles:
 
@@ -53,7 +59,10 @@ $ npm start
 
 ### Start App in dev mode
 
-...
+1. Compile Sass/Scss & Jsx
+2. Build application
+3. Start `gulp watch` for recompiling Sass/Scss & Jsx after filechanges
+4. Start Electron
 
 ```shell
 $ npm run dev
