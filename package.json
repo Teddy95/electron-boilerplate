@@ -1,12 +1,17 @@
 {
     "name": "reactron",
+    "productName": "Reactron - Electron Boilerplate",
     "version": "1.0.0",
     "description": "Electron Boilerplate with React, Babel, Browserify and Gulp",
     "main": "build/main.js",
     "scripts": {
         "start": "electron .",
         "build": "gulp build",
-        "watch": "gulp watch"
+        "watch": "gulp watch",
+        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=$npm_package_build_icon_mac --prune=true --out=release",
+        "package-windows": "electron-packager . $npm_package_name --overwrite --asar=true --platform=win32 --arch=ia32 --icon=$npm_package_build_icon_windows --prune=true --out=release --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=$npm_package_productName",
+        "package-linux": "electron-packager . $npm_package_name --overwrite --asar=true --platform=linux --arch=x64 --icon=$npm_package_build_icon_linux --prune=true --out=release",
+        "release": "gulp release"
     },
     "devDependencies": {
         "@babel/core": "^7.2.2",
@@ -15,11 +20,13 @@
         "babelify": "^10.0.0",
         "browserify": "^16.2.3",
         "electron": "^4.0.1",
+        "electron-packager": "^13.0.1",
         "gulp": "^4.0.0",
         "gulp-babel": "^8.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-css": "^0.1.0",
         "gulp-sass": "^4.0.2",
+        "gulp-shell": "^0.6.5",
         "gulp-uglify": "^3.0.1",
         "node-sass": "^4.11.0",
         "vinyl-buffer": "^1.0.1",
@@ -28,5 +35,12 @@
     "dependencies": {
         "react": "^16.7.0",
         "react-dom": "^16.7.0"
+    },
+    "build": {
+        "icon": {
+            "mac": "app/assets/icons/icon.icns",
+            "windows": "app/assets/icons/icon.ico",
+            "linux": "app/assets/icons/icon.png"
+        }
     }
 }
