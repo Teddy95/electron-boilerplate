@@ -106,7 +106,7 @@ gulp.task('build', gulp.series('compile', 'copy'))
  * Start Electron
  */
 gulp.task('start-electron', shell.task('electron .'))
-gulp.task('start-electron-dev', shell.task('ELECTRON_ENV=development electron .'))
+gulp.task('start-electron-dev', shell.task(/*'ELECTRON_ENV=development */'electron .'))
 
 /**
  * Package App to /release
