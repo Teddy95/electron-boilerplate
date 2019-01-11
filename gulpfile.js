@@ -106,8 +106,9 @@ gulp.task('build', gulp.series('compile', 'copy'))
 /**
  * Set Electron to dev mode
  */
-gulp.task('set-electron-dev', () => {
-	return process.env.NODE_ENV = 'development'
+gulp.task('set-electron-dev', done => {
+	process.env.NODE_ENV = 'development'
+	done()
 })
 
 /**
