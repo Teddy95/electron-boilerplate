@@ -9,9 +9,9 @@
         "dev": "gulp serve",
         "build": "gulp build",
         "watch": "gulp watch",
-        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=$npm_package_build_icon_mac --prune=true --out=release",
-        "package-windows": "electron-packager . $npm_package_name --overwrite --asar=true --platform=win32 --arch=ia32 --icon=$npm_package_build_icon_windows --prune=true --out=release --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=$npm_package_productName",
-        "package-linux": "electron-packager . $npm_package_name --overwrite --asar=true --platform=linux --arch=x64 --icon=$npm_package_build_icon_linux --prune=true --out=release",
+        "package-mac": "gulp package-mac",
+        "package-windows": "gulp package-windows",
+        "package-linux": "gulp package-linux",
         "release": "gulp release"
     },
     "devDependencies": {
