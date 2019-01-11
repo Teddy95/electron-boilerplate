@@ -115,7 +115,7 @@ Set product name & icons in `package.json`.
 }
 ```
 
-##### Packaging (on Mac OS X and Linux)
+##### Packaging
 
 _Packaging for Mac OS X_:
 
