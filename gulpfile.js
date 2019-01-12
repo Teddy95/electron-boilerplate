@@ -104,10 +104,18 @@ gulp.task('copy', gulp.parallel('copy-css', 'copy-electron-js', 'copy-html', 'co
 gulp.task('build', gulp.series('compile', 'copy'))
 
 /**
- * Set Electron to dev mode
+ * Set Electron to development mode
  */
-gulp.task('set-electron-dev', done => {
+gulp.task('set-env:development', done => {
 	process.env.NODE_ENV = 'development'
+	done()
+})
+
+/**
+ * Set Electron to production mode
+ */
+gulp.task('set-env:production', done => {
+	process.env.NODE_ENV = 'production'
 	done()
 })
 
@@ -130,7 +138,7 @@ if (process.platform === 'win32') {
 	gulp.task('package-linux', shell.task('electron-packager . $npm_package_name --overwrite --asar=true --platform=linux --arch=x64 --icon=$npm_package_build_icon_linux --prune=true --out=release'))
 }
 
-gulp.task('release', gulp.series('build', gulp.parallel('package-mac', 'package-windows', 'package-linux')))
+gulp.task('release', gulp.series('build', 'set-env:production', gulp.parallel('package-mac', 'package-windows', 'package-linux'), 'set-env:development'))
 
 /**
  * Add watch task for Sass/Scss, Jsx and Js Files
@@ -147,4 +155,4 @@ gulp.task('watch', done => {
 /**
  * Serve App for development
  */
-gulp.task('serve', gulp.series('build', 'watch', 'set-electron-dev', 'start-electron'))
+gulp.task('serve', gulp.series('build', 'watch', 'set-env:development', 'start-electron'))
