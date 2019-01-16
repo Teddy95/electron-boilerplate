@@ -44,7 +44,9 @@ gulp.task('copy-css', () => {
  */
 gulp.task('compile-jsx', () => {
 	var options = {
-		entries: "app/js/index.js",
+		entries: [
+			'app/js/index.js'
+		],
 		extensions: [
 			'.js',
 			'.jsx'
