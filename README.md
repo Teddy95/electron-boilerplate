@@ -49,7 +49,7 @@ Happy Coding! :heart: :sparkles:
 - `/build` Electron index.html & main.js copied from `/app`
 - `/build/assets` Files copied from `/app/assets`
 - `/build/css` Here you find the `style.min.css` generated from all Css files in `/app/css`
-- `/build/js` Here you find the `bundle.min.js` with contains the Js code of your React application
+- `/build/js` Here you find the `bundle.min.js` which contains the Js code of your React application
 
 ### Packaging in `/release`
 
