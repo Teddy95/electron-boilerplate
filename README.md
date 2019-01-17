@@ -65,12 +65,12 @@ $ npm start
 
 ### Start App in dev mode
 
-1. Compile Sass/Scss & Jsx
-2. Build application
-3. Start `gulp watch` for recompiling Sass/Scss & Jsx after filechanges
-4. Start Electron
-
 ```shell
+# 1. Compile Sass/Scss & Jsx
+# 2. Build application
+# 3. Start `gulp watch` for recompiling Sass/Scss & Jsx after filechanges
+# 4. Start Electron
+
 $ npm run dev
 ```
 
