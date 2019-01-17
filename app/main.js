@@ -14,7 +14,14 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600, icon: 'build/assets/icons/icon.png'})
+  mainWindow = new BrowserWindow({
+	  width: 800,
+	  height: 600,
+	  icon: 'build/assets/icons/icon.png',
+	  webPreferences: {
+		  nodeIntegration: true
+	  }
+  })
 
   // and load the index.html of the app.
   mainWindow.loadFile('build/index.html')
