@@ -6,6 +6,9 @@
 ![React App Electron Window](app/assets/app-window.png)
 
 ```shell
+# Begin with installing Gulp!
+$ npm install gulp -g
+
 # Clone Repository
 $ git clone https://github.com/Teddy95/reactron.git my-project
 
@@ -113,6 +116,12 @@ Set product name & icons in `package.json`.
 		}
 	}
 }
+```
+
+##### Install Electron Packager
+
+```shell
+$ npm install electron-packager -g
 ```
 
 ##### Packaging
