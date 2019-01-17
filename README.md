@@ -30,7 +30,7 @@ $ npm run dev
 - Watch task for live compiling of Sass/Scss and Jsx files after changes :dizzy:
 - Compiling React Jsx with Babel and Browserify :crystal_ball:
 - Gulp included + Tasks for compiling, packaging & more :wine_glass:
-- Included Electron Packager for packaging application for Mac OS X, Windows and Linux :gift:
+- Included Electron Packager configurations for packaging application for Mac OS X, Windows and Linux :gift:
 
 Happy Coding! :heart: :sparkles:
 
